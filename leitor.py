@@ -3,7 +3,7 @@ from datetime import datetime
 import json
 
 baseJsonStructure = []
-nameFileJson = ''
+nameFileJson = 'file_' + datetime.now().strftime('%d_%m_%Y_%H_%M_%S_%f') + '.json'
 
 def createJsonFile():
     file = open(nameFileJson, "w")
@@ -32,12 +32,11 @@ def saveData(codex, datex):
 def mainFunction():
     while True:
         code = input('\nInsert a code:')
-        date=datetime.now().strftime('%d/%m/%Y %H:%M:%S')
+        date=datetime.now().strftime('%d-%m-%Y %H:%M:%S')
         saveData(code, date)
 
 if __name__ == "__main__":
     try:
-        nameFileJson = 'file_' + datetime.now().strftime('%d%m%Y%H%M%S%f') + '.json'
         createJsonFile()
         mainFunction()
     except Exception as e:
