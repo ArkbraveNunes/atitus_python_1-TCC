@@ -1,0 +1,13 @@
+Report referring to the comparison of inventories file_26_11_2022_22_23_13_164505 and file_26_11_2022_22_24_45_373554
+
+The following codes are only contained in the file: file_26_11_2022_22_23_13_164505
+[
+    "7892980186101"
+]
+
+
+The following codes are only contained in the file: file_26_11_2022_22_24_45_373554
+[
+    "7898731115055"
+]
+
